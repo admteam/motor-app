@@ -11,8 +11,9 @@ function closeNav() {
     document.getElementById("main").style.marginLeft = "0";
 }
 
-// Función para cargar un PDF en el contenedor
+// Función para cargar y mostrar el PDF
 function openPDF(pdfFile) {
     const pdfContainer = document.getElementById("pdf-container");
-    pdfContainer.innerHTML = `<embed src="${pdfFile}" width="100%" height="100%" type="application/pdf">`;
+    pdfContainer.innerHTML = `<iframe src="pdfs/${pdfFile}" width="100%" height="600px"></iframe>`;
 }
+
