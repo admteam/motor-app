@@ -1,4 +1,3 @@
-
 // Función para abrir el menú lateral
 function openNav() {
     document.getElementById("sidebar").style.width = "250px";
@@ -11,9 +10,9 @@ function closeNav() {
     document.getElementById("main").style.marginLeft = "0";
 }
 
-// Función para cargar y mostrar el PDF
+// Función para cargar un PDF en el contenedor
 function openPDF(pdfFile) {
     const pdfContainer = document.getElementById("pdf-container");
-    pdfContainer.innerHTML = `<iframe src="pdfs/${pdfFile}" width="100%" height="600px"></iframe>`;
+    pdfContainer.innerHTML = `<embed src="${pdfFile}" width="100%" height="100%" type="application/pdf">`;
 }
 
