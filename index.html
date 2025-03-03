@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Menú lateral -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+        <!-- Sección de motores -->
+        <h3>Manuales</h3>
+		
+        <a href="javascript:void(0)" onclick="openPDF('motor_sp.pdf')">Motor SP</a>
+        <a href="javascript:void(0)" onclick="openPDF('motor_inyeccion.pdf')">Motor Inyección</a>
+        <a href="javascript:void(0)" onclick="openPDF('motor_diesel.pdf')">Motor Diesel</a>
+        <a href="javascript:void(0)" onclick="openPDF('motor_903.pdf')">Motor 903</a>
+        <a href="javascript:void(0)" onclick="openPDF('direccion.pdf')">Dirección</a>
+        <a href="javascript:void(0)" onclick="openPDF('suspension.pdf')">Suspensión</a>
+        <a href="javascript:void(0)" onclick="openPDF('transmision.pdf')">Transmisión</a>
+        <a href="javascript:void(0)" onclick="openPDF('frenos.pdf')">Frenos</a>
+        <a href="javascript:void(0)" onclick="openPDF('electricidad.pdf')">Electricidad</a>
+        <a href="javascript:void(0)" onclick="openPDF('carroceria.pdf')">Carrocería</a>
+        <a href="javascript:void(0)" onclick="openPDF('generalidades.pdf')">Generalidades</a>
+        <a href="javascript:void(0)" onclick="openPDF('le2_jetronic.pdf')">LE-2 Jetronic</a>
+        <a href="javascript:void(0)" onclick="openPDF('codigos_pintura.pdf')">Códigos de Pintura</a>
+        <a href="javascript:void(0)" onclick="openPDF('tiempos_reparacion.pdf')">Tiempos de Reparación</a>
+		
+		
+		 <!-- Sección de mantenimiento y reparaciones -->
+        <h3>Mantenimiento y Reparaciones</h3>
+		
+	   <a href="javascript:void(0)" onclick="openPDF('aga_u.pdf')">Hagalo Usted Mismo</a>
+	   
+
+        <h3>Manuales De Despiece</h3>
+		<a href="javascript:void(0)" onclick="openPDF('despiece_ibiza_89.pdf')">Despiece Ibiza 89</a>
+        <a href="javascript:void(0)" onclick="openPDF('despiece_ibiza_96.pdf')">Despiece Ibiza 96</a>
+        <a href="javascript:void(0)" onclick="openPDF('seat_malaga_96.pdf')">Seat Málaga 96</a>
+		
+		 <!-- Sección de mantenimiento y reparaciones -->
+        <h3>Correa De Distribucion</h3>
+		
+		<a href="javascript:void(0)" onclick="openPDF('distribucion_0.9.pdf')">Distribución 0.9</a>
+        <a href="javascript:void(0)" onclick="openPDF('distribucion_1.2_1.5_1.7.pdf')">Distribución 1.2/1.5/1.7</a>
+        <a href="javascript:void(0)" onclick="openPDF('distribucion_1.7d.pdf')">Distribución 1.7D</a>
+		
+		
+    </div>
+
+    <!-- Contenido principal -->
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ Abrir Menú</span>
+        <div id="pdf-container" class="pdf-container">
+            <!-- El PDF se cargará aquí -->
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
