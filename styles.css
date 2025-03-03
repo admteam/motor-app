@@ -1,9 +1,10 @@
-
 /* Estilos para el menú lateral */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f8f9fa;
+    transition: overflow 0.3s;
 }
 
 /* El menú lateral */
@@ -14,23 +15,40 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #616161;
+    background-color: #343a40;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 0 10px 10px 0;
+}
+
+/* Encabezado del menú con imagen */
+.sidebar-header {
+    text-align: center;
+    padding: 15px;
+}
+
+.sidebar-header img {
+    width: 80%;
+    max-width: 200px;
+    border-radius: 10px;
 }
 
 .sidebar a {
-    padding: 10px 15px;
+    padding: 12px 20px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     display: block;
     transition: 0.3s;
+    border-left: 3px solid transparent;
 }
 
 .sidebar a:hover {
-    color: #f1f1f1;
+    color: #f8f9fa;
+    background-color: #495057;
+    border-left: 3px solid #ffc107;
 }
 
 .sidebar .closebtn {
@@ -39,6 +57,7 @@ body {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    color: white;
 }
 
 /* El contenido principal */
@@ -50,16 +69,22 @@ body {
 /* PDF contenedor */
 .pdf-container {
     width: 100%;
-    height: 80vh;
+    height: 100vh; /* Que ocupe toda la pantalla */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f4f4f4;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 /* Estilos de botón en dispositivos móviles */
 @media screen and (max-width: 600px) {
+    .sidebar {
+        width: 80%; /* En lugar de toda la pantalla */
+    }
+
     .sidebar a {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
